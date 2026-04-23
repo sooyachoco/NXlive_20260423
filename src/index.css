@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap');
+@import "tailwindcss";
+
+/* ── Theme Variables ── */
+:root {
+  --bg-primary: #111113;
+  --bg-secondary: #141417;
+  --bg-card: #1C1C21;
+  --bg-card-hover: #242429;
+  --border: #2E2E33;
+  --border-light: #38383D;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E8EBF2;
+  --text-tertiary: #8F96A3;
+  --text-muted: #747A86;
+  --accent-red: #D84141;
+  --accent-red-hover: #E05555;
+  --accent-blue: #3D91FF;
+  --accent-yellow: #FFBB00;
+  --chip-active-bg: #FFFFFF;
+  --chip-active-text: #111113;
+  --chip-bg: #262629;
+  --chip-text: #B3B3B8;
+  --chip-border: #38383D;
+  --badge-bg: rgba(0,0,0,0.6);
+  --footer-bg: #0D0D0F;
+  --shadow: 0 2px 12px rgba(0,0,0,0.3);
+  --thumb-overlay-hover: rgba(255,255,255,0.05);
+  --toggle-bg: #2A2A2E;
+  --toggle-knob: #FFFFFF;
+  --toggle-icon-sun: #9999A1;
+  --toggle-icon-moon: #FFFFFF;
+  --nav-active-bar: #D84141;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #38383D;
+}
+
+[data-theme="light"] {
+  --bg-primary: #F5F5F7;
+  --bg-secondary: #EEEEF0;
+  --bg-card: #FFFFFF;
+  --bg-card-hover: #F0F0F2;
+  --border: #D8D8DC;
+  --border-light: #E0E0E4;
+  --text-primary: #17191C;
+  --text-secondary: #3D4148;
+  --text-tertiary: #747A86;
+  --text-muted: #8F96A3;
+  --accent-red: #D84141;
+  --accent-red-hover: #E05555;
+  --accent-blue: #0A74FF;
+  --accent-yellow: #FFBB00;
+  --chip-active-bg: #111113;
+  --chip-active-text: #FFFFFF;
+  --chip-bg: #FFFFFF;
+  --chip-text: #555560;
+  --chip-border: #D0D0D4;
+  --badge-bg: rgba(0,0,0,0.55);
+  --footer-bg: #E8E8EC;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --thumb-overlay-hover: rgba(0,0,0,0.04);
+  --toggle-bg: #D8D8DC;
+  --toggle-knob: #FFFFFF;
+  --toggle-icon-sun: #E69A1A;
+  --toggle-icon-moon: #9999A1;
+  --nav-active-bar: #D84141;
+  --scrollbar-track: transparent;
+  --scrollbar-thumb: #C8C8CC;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  transition: background 0.35s ease, color 0.35s ease;
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: var(--scrollbar-track); }
+::-webkit-scrollbar-thumb { background: var(--scrollbar-thumb); border-radius: 3px; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.72; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
