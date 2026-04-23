@@ -10,13 +10,14 @@
   --border: #2E2E33;
   --border-light: #38383D;
   --text-primary: #FFFFFF;
-  --text-secondary: #E8EBF2;
+  --text-secondary: #EBEBED;
   --text-tertiary: #8F96A3;
   --text-muted: #747A86;
   --accent-red: #D84141;
   --accent-red-hover: #E05555;
   --accent-blue: #3D91FF;
-  --accent-yellow: #FFBB00;
+  --accent-yellow: #E5991A;
+  --divider: #333338;
   --chip-active-bg: #FFFFFF;
   --chip-active-text: #111113;
   --chip-bg: #262629;
